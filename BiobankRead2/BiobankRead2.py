@@ -11,7 +11,8 @@ Edited 01/06/2017
 import pandas as pd
 import bs4 #beautifulsoup4 package
 import re # RegEx 
-import urllib2
+# import urllib2
+import urllib.request as urllib2
 import numpy as np
 import os
 import os.path
