@@ -74,7 +74,7 @@ class BiobankRead():
             print(' something.html = information file, generated')
             print('                  alongside the.csv file')
             print()          
-	    self.OK = False
+            self.OK = False
             return
 
         if not os.path.isfile(html_file):
