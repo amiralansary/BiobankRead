@@ -130,7 +130,7 @@ class BiobankRead():
             self.OK = False
             return
         self.N = len(self.Eids_all)
-        print ' Found', self.N, 'EIDS'
+        print(' Found', self.N, 'EIDS')
         
         # All attendance dates
         # QUERY - WHERE IS N SET?
@@ -227,8 +227,8 @@ class BiobankRead():
         if not userrows:
             raise Exception('The input variable is not in the files')
         if len(userrows) > 1:
-            print 'warning - more than one variable row found'
-            print 'warning - returning first instance only'
+            print('warning - more than one variable row found')
+            print('warning - returning first instance only')
         userrows_str = str(userrows[0])
 
         # extract IDs related to variables
