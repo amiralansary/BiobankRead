@@ -144,7 +144,7 @@ class BiobankRead():
 
     def makeSoup(self):
         """Parse the html into a nested data structure"""
-        f = open(self.html_file, 'r').read()
+        f = open(self.html_file, 'r', encoding='utf-8').read()
         soup = bs4.BeautifulSoup(f, 'html.parser')
         return soup
         
