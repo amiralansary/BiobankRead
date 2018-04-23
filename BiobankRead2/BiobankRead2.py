@@ -19,6 +19,9 @@ import os.path
 import sys
 from datetime import datetime
 
+# change reader to fix mac error
+import io
+
 ## Required input: files location of the .csv and .html files
 # .csv: ukb<release_code>.csv, the main data file produced after extraction from 
 #       the .enc file
@@ -144,7 +147,7 @@ class BiobankRead():
 
     def makeSoup(self):
         """Parse the html into a nested data structure"""
-        f = open(self.html_file, 'r', encoding='cp1252').read()
+        f = io.open(self.html_file, 'r', encoding='cp1252').read()
         soup = bs4.BeautifulSoup(f, 'html.parser')
         return soup
         
