@@ -424,7 +424,7 @@ class BiobankRead():
         '''
         df = self.extract_many_vars(varlist, dropNaN=dropNaN)
         # Exclude eid column from covariance
-	df = df.drop(['eid'], axis=1)
+        df = df.drop(['eid'], axis=1)
         covariance = df.cov();
         return covariance, df
         
